@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 232, 232);
+}
+
+:root {
+    --height: 100vh;
+}
+
+
+.parent {
+    display: flex;
+}
+
+.facebooks-text-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.height {
+    height: 76vh;
+}
+
+.form-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85vh;
+}
+
+
+
+.company-name {
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1877f2;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.company-description {
+    font-family: 'SFProDisplay-Regular', Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.company-about {
+    width: 65%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10%;
+    color: #1c1e21;
+    background-color: white;
+    text-align: center;
+    box-shadow: 3px 3px 8px #d1cfcf;
+    height: 65%;
+}
+
+.input {
+    margin-top: 15px;
+    font-size: 12px;
+    padding: 17px 10px;
+    font-weight: bold;
+    border: 1px solid rgb(209, 204, 204);
+    width: 80%;
+}
+
+.btn {
+    padding: 17px 5px;
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #116fe9;
+}
+
+.line {
+    margin: 10px 8px;
+    background-color: rgb(236, 231, 231);
+    height: 1px;
+    width: 95%;
+}
+
+.form a {
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    background-color: rgb(52, 187, 52);
+    width: 50%;
+    border: 1px solid #36a420;
+    margin-bottom: 15px;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+    border-color: #36a420;
+}
+
+.forgot-text {
+    margin-top: 15px;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+@media (max-width:900px) {
+    :root {
+        font-size: 14px;
+        height: 50vh;
+    }
+
+    .parent {
+        flex-direction: column;
+        width: 100%;
+        align-items: center
+    }
+
+    .form-right {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .form-right, .company-about, .facebooks-text-left {
+        width: 100%;
+    }
+
+    .form-right {
+        height: 50%;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+
+    .company-about {
+        text-align: center;
+    }
+
+    .facebooks-text-left {
+        height: initial;
+    }
+}
